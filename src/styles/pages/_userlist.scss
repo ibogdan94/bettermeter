@@ -1,0 +1,22 @@
+// Userlist
+
+.details-row {
+  padding: 16px 0;
+  width: 100%;
+  border-bottom: 1px solid $light-100;
+  margin-bottom: 32px;
+
+  &.border-free {
+    border-bottom: none;
+  }
+}
+
+.details-name {
+  max-width: 40%;
+  display: block;
+  width: 100%;
+}
+
+.textfield-wrap {
+  max-width: 240px;
+}

@@ -1,0 +1,30 @@
+body {
+  .MuiChip-root {
+    padding: 0 6px;
+    height: auto;
+
+    .MuiChip-label {
+      padding: 0;
+      font-size: 14px;
+      font-weight: $font-medium;
+    }
+
+    &.custom-chip {
+      &.success {
+        background-color: #beedc0;
+
+        .MuiChip-label {
+          color: #01653b;
+        }
+      }
+
+      &.error {
+        background-color: #fed1d1;
+
+        .MuiChip-label {
+          color: #ec0c0c;
+        }
+      }
+    }
+  }
+}

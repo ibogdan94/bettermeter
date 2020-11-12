@@ -1,0 +1,55 @@
+body {
+  .MuiAvatar-root {
+    width: 33px;
+    height: 33px;
+    font-size: 13px;
+    font-weight: $font-bold;
+    line-height: 1;
+    color: $white;
+
+    @include media('>=desktop') {
+      width: 36px;
+      height: 36px;
+    }
+
+    &.avatar-gray {
+      background-color: #84868a;
+    }
+
+    &.avatar-orange {
+      background-color: #ff9900;
+    }
+
+    &.avatar-blue {
+      background-color: #127bf5;
+    }
+
+    &.avatar-pink {
+      background-color: #f73859;
+    }
+
+    &.avatar-green {
+      background-color: #3dddaa;
+    }
+
+    &.avatar-light-yellow {
+      background-color: #faf8f3;
+      color: #2e3d5b;
+    }
+
+    &.avatar-light-blue {
+      background-color: #e6f5fa;
+      color: #2e3d5b;
+    }
+
+    &.avatar-light-purple {
+      background-color: #f0f4ff;
+      color: #2e3d5b;
+    }
+
+    &.avatar-light-green {
+      background-color: #effcf0;
+      color: #2e3d5b;
+    }
+  }
+}

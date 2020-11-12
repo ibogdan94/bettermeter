@@ -1,0 +1,116 @@
+.tabs-holder {
+  width: 100%;
+}
+
+body {
+  .MuiAppBar-root {
+    &.custom-tabs {
+      background-color: transparent;
+      box-shadow: none;
+      max-width: 100%;
+
+      .MuiTabs-indicator {
+        display: none;
+      }
+
+      .MuiTab-root {
+        background-color: rgba($white, 0.5);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: $black;
+
+        @include media('<desktop') {
+          background-color: #f6f6f6;
+          opacity: 0.7;
+        }
+
+        &.Mui-selected {
+          background-color: $white;
+
+          @include media('<desktop') {
+            background-color: #f6f6f6;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .subheading {
+    width: 100%;
+    color: #84868a;
+    font-size: 18px;
+    font-weight: $font-medium;
+    text-transform: none;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    img {
+      width: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  p {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: $font-medium;
+    color: $black;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 22px;
+      margin-right: 20px;
+    }
+  }
+
+  .custom-chip {
+    margin-left: 10px;
+  }
+}
+
+.tab-content {
+  background-color: $white;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 40px;
+}
+
+.column-layout {
+  display: block;
+
+  @include media('>=desktop') {
+    display: flex;
+  }
+
+  .statistic-col {
+    padding: 20px;
+
+    @include media('>=desktop') {
+      width: 30%;
+      border-right: 1px solid #e5e5e5;
+      padding: 40px 50px;
+    }
+  }
+
+  .chart-col {
+    padding: 20px;
+
+    @include media('>=desktop') {
+      width: 70%;
+      padding: 40px 50px;
+    }
+  }
+}

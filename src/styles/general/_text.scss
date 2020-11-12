@@ -1,0 +1,131 @@
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-light {
+  font-weight: $font-light;
+}
+
+.font-regular {
+  font-weight: $font-regular;
+}
+
+.font-medium {
+  font-weight: $font-medium;
+}
+
+.font-semi-bold {
+  font-weight: $font-semi-bold;
+}
+
+.font-bold {
+  font-weight: $font-bold;
+}
+
+.text-underlined {
+  text-decoration: underline;
+}
+
+.text-lg {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.text-sm {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.gray-100 {
+  color: $gray-100;
+}
+
+.gray-200 {
+  color: $gray-200;
+}
+
+.gray-300 {
+  color: $gray-300;
+}
+
+.gray-400 {
+  color: $gray-400;
+}
+
+.gray-500 {
+  color: $gray-500;
+}
+
+.gray-700 {
+  color: $gray-700;
+}
+
+.gray-900 {
+  color: $gray-900;
+}
+
+.light-100 {
+  color: $light-100;
+}
+
+.light-200 {
+  color: $light-200;
+}
+
+.light-300 {
+  color: $light-300;
+}
+
+.blue-500 {
+  color: $blue-500;
+}
+
+.title {
+  &.h1 {
+    font-size: $h1-font-size;
+  }
+
+  &.h2 {
+    font-size: $h2-font-size;
+  }
+
+  &.h3 {
+    font-size: $h3-font-size;
+  }
+
+  &.h4 {
+    font-size: $h4-font-size;
+  }
+
+  &.h5 {
+    font-size: $h5-font-size;
+  }
+
+  &.h6 {
+    font-size: $h6-font-size;
+  }
+}

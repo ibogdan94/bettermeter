@@ -1,0 +1,65 @@
+// Dropdowns
+
+body {
+  .MuiPaper-root {
+    background-color: #0c172e;
+    width: 100%;
+    max-width: 208px;
+
+    .MuiListItem-root {
+      color: $white;
+      font-size: 16px;
+      line-height: 1;
+      padding-top: 14px;
+      padding-bottom: 14px;
+
+      &.Mui-disabled {
+        opacity: 1;
+        color: #5d6677;
+      }
+    }
+
+    &.light-bg {
+      box-shadow: 0 10px 20px -10px #cecece;
+      background-color: $white;
+      border: 1px solid #e5e5e5;
+
+      .MuiListItem-root {
+        color: #1a2437;
+        font-size: 16px;
+        line-height: 1;
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+        &.Mui-disabled {
+          color: #afafaf;
+        }
+      }
+    }
+  }
+
+  .MuiPopover-root {
+    &.light-bg {
+      .MuiPaper-root {
+        box-shadow: 0 10px 20px -10px #cecece;
+        background-color: $white;
+        border: 1px solid #e5e5e5;
+        width: 160px;
+        border-radius: 10px;
+
+        .MuiListItem-root {
+          color: #1a2437;
+          font-size: 16px;
+          line-height: 1;
+          padding-top: 14px;
+          padding-bottom: 14px;
+          font-weight: $font-medium;
+
+          &.Mui-disabled {
+            color: #afafaf;
+          }
+        }
+      }
+    }
+  }
+}

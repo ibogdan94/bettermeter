@@ -1,0 +1,51 @@
+body {
+  .MuiTooltip-popper {
+    max-width: 175px;
+    color: $white;
+  }
+
+  .MuiTooltip-tooltip {
+    background-color: #0c172e;
+    padding: 15px;
+    border-radius: 7px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 4px solid #0c172e;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.tooltip-text {
+  .tooltip-heading {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: $font-bold;
+    margin-bottom: 7px;
+
+    img {
+      width: 12px;
+      margin-right: 6px;
+    }
+  }
+
+  .subtext {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: $font-medium;
+    color: #84868a;
+    margin-bottom: 0;
+  }
+}

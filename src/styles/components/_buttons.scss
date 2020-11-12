@@ -1,0 +1,28 @@
+// Buttons
+body {
+  .MuiButton-root {
+    font-family: $base-font-family;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1;
+    color: #1a2437;
+    font-weight: $font-medium;
+    min-width: auto;
+
+    &.username-btn {
+      padding: 0;
+      color: $white;
+      font-size: 17px;
+    }
+  }
+
+  .MuiIconButton-root {
+    padding: 0;
+
+    &.burger-close {
+      padding: 16px;
+      float: right;
+    }
+  }
+}

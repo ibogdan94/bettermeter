@@ -1,0 +1,95 @@
+.custom-datepicker {
+  .MuiPickersCalendar-root {
+    margin-top: 22px;
+    min-height: 255px;
+  }
+
+  .MuiPickersToolbar-root,
+  .MuiPickersCalendarHeader-root,
+  .MuiPickersCalendar-daysHeader {
+    display: none;
+  }
+
+  .MuiPickersCalendar-week {
+    margin: 14px 0;
+  }
+
+  .MuiPickersDateRangeDay-dayInsideRangeInterval {
+    .MuiPickersDay-dayLabel {
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        background-color: #ff9900;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        right: -7px;
+        top: 4px;
+      }
+    }
+  }
+
+  .MuiPickersDay-root {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 21px;
+
+    &.Mui-selected {
+      background-color: #0c172e !important;
+
+      .MuiPickersDay-dayLabel {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          background-color: #ff9900;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          position: absolute;
+          right: -7px;
+          top: 4px;
+        }
+      }
+
+      &:hover {
+        background-color: #0c172e;
+      }
+    }
+  }
+
+  .MuiPickersDay-today:not(.Mui-selected) {
+    border-color: #0c172e;
+  }
+
+  .MuiPickersDateRangeDay-rangeIntervalPreview {
+    //margin: 6px 10px;
+    padding: 0 10px;
+  }
+
+  .MuiPickersDateRangeDay-dayOutsideRangeInterval:hover {
+    border-color: #0c172e;
+    border-radius: 50%;
+  }
+
+  .MuiPickersDateRangeDay-rangeIntervalDayHighlightStart,
+  .MuiPickersDateRangeDay-rangeIntervalDayHighlight:first-child {
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+  }
+
+  .MuiPickersDateRangeDay-rangeIntervalDayHighlightEnd,
+  .MuiPickersDateRangeDay-rangeIntervalDayHighlight:last-child {
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+  }
+
+  .MuiPickersDateRangeDay-rangeIntervalDayHighlight {
+    background-color: #0c172e;
+  }
+}
